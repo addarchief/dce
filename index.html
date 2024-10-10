@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -92,6 +91,22 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .map-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+
+      .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     </style>
 
     
@@ -105,11 +120,11 @@
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column" >
 
     <header>
-      <div container>
+      <div class="container">
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="carru2.jpg" class="d-block w-100" alt="...">
+              <img src="carru2.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
           </div>
         </div>
@@ -125,7 +140,7 @@
 
   <hr class="featurette-divider">
       <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-sm-12 col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">Venta de Cartas y Productos Relacionados</h2>
             <span class="lead"> 
               <li><b>Sobres y Booster Packs:</b> Paquetes sellados de cartas al azar de diversas expansiones y sets.</li>
@@ -134,22 +149,22 @@
               <li><b>Accesorios:</b> Fundas para cartas, tapetes de juego, cajas para guardar mazos, contadores de vida, y más.</li>
             </span>
           </div>
-          <div class="col-md-5">
-            <img height="500px" width="500px" src="car2.jpg">
+          <div class="col-sm-12 col-md-5">
+            <img src="car2.jpg" class="img-fluid" alt="Imagen de carta">
           </div>
         </div>
   <hr class="featurette-divider">
 
   <div class="row featurette">
-      <div class="col-md-7 order-md-2">
+      <div class="col-sm-12 col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Áreas de Juego</h2><br>
         <span class="lead"> 
               <li><b>Mesas de Juego:</b> Espacios designados para que los jugadores se reúnan y jueguen partidas amistosas o torneos.</li>
               <li><b>Eventos y Torneos:</b> Organizan eventos regulares como torneos locales, pre-lanzamientos de nuevas expansiones, y noches de juego casual.</li>
             </span>
       </div>
-      <div class="col-md-5">
-        <img height="500px" width="450px" src="space.jpg">
+      <div class="col-sm-12 col-md-5">
+        <img src="space.jpg" class="img-fluid" alt="Área de juego">
       </div>
     </div>
      <hr class="featurette-divider">
@@ -158,86 +173,41 @@
        <h4>Servicios</h4>
 
       <div class="container row">
-       <div class="card col text-bg-dark" style="width: 18rem;">
-          <img src="producto2.jpg" class="card-img-top" alt="...">
+       <div class="card col-sm-12 col-md-4 text-bg-dark" style="width: 18rem;">
+          <img src="producto2.jpg" class="img-fluid" alt="...">
           <div class="card-body">
             <p class="card-text"><b>Venta de Cajas de Sobres</b></p>
           </div>
         </div>
 
-        <div class="card col text-bg-dark" style="width: 18rem;">
-          <img src="torneo.jpg" class="card-img-top" alt="...">
+        <div class="card col-sm-12 col-md-4 text-bg-dark" style="width: 18rem;">
+          <img src="torneo.jpg" class="img-fluid" alt="...">
           <div class="card-body">
             <p class="card-text"><b>Torneos Mensuales</b></p>
           </div>
         </div>
 
-        <div class="card col text-bg-dark" style="width: 18rem;">
-          <img src="area.jpg" class="card-img-top" alt="...">
+        <div class="card col-sm-12 col-md-4 text-bg-dark" style="width: 18rem;">
+          <img src="area.jpg" class="img-fluid" alt="...">
           <div class="card-body">
             <p class="card-text"><b>Servicios de Intercambio</b></p>
           </div>
         </div>
       </div>
-     </section><br>
+     </section>
 
-     <div class="container">
-       <h3>Ubicacion</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.4199811293187!2d-71.63205091292119!3d10.692730993451931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e899fac3e34d82d%3A0x330fb1a52706c1b9!2sOracle%20Gaming!5e0!3m2!1ses!2sve!4v1718988599449!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-     </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-primary">&copy; 2024 Oracle Gaming</span>
-        </div>
-
-        <div class="col">
-        <h4>Informacion de contacto</h4>
-        <div class="col">
-        <ul class="nav flex-column">
-          <li class="nav-item "><a href="#" class="nav-link p-0 text-body-primary"></a>Numero de telefono: 0412-785-5642</li>
-          <li class="nav-item "><a href="#" class="nav-link p-0 text-body-primary"></a>Correo electronico: contacto@oraclega.com</li>
-        </ul>
-      </div>
-        
-      </div>
-
-        <ul target="_blank" class="nav col-md-4 justify-content-end list-unstyled d-flex ">
-          <li target="_blank" class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/oracleteamgaming/?next=%2F"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"> <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path> </svg></a></li>
-        </ul>
-      </footer>
+    <hr class="featurette-divider">
+    <h5>Ubicación</h5>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-<script src="/docs/5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <footer class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-3 my-4 border-top bg-dark">
+    <p>© 2023 Oracle Gaming TCG Store. Todos los derechos reservados.</p>
+  </footer>
+</div>
 
-    </body>
+  </body>
 </html>
+
   
